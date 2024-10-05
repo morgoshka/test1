@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YourTour - Путешествия</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Шапка -->
+    <header class="header">
+        <div class="header__logo">
+            <img src="img/logo.png" alt="YourTour">
+        </div>
+        <nav class="header__nav">
+            <ul class="header__menu">
+                <li class="header__item"><a href="#">Туры</a></li>
+                <li class="header__item"><a href="#">О компании</a></li>
+                <li class="header__item"><a href="#">Отзывы</a></li>
+                <li class="header__item"><a href="#">Контакты</a></li>
+            </ul>
+        </nav>
+        <div class="header__contact">
+            <a href="tel:+79999999999">+7 999 999 99 99</a>
+        </div>
+    </header>
+
+    <!-- Основной контент -->
+    <main>
+        <!-- Секция Hero -->
+        <section class="hero">
+            <h1 class="hero__title">Идеальные путешествия существуют</h1>
+            <p class="hero__subtitle">Найдите свой тур уже сегодня</p>
+            <button class="hero__button">Выбрать тур</button>
+        </section>
+
+        <!-- Секция "Выбери свой тур" -->
+        <section class="tours">
+            <h2 class="tours__title">Выбери свой тур</h2>
+            <nav class="tours__nav">
+                <ul class="tours__menu">
+                    <li class="tours__item tours__item--active">Все</li>
+                    <li class="tours__item">Пляжи</li>
+                    <li class="tours__item">Горы</li>
+                    <li class="tours__item">Экскурсии</li>
+                </ul>
+            </nav>
+            <div class="tours__list">
+                <!-- Карточки туров (используем flexbox или grid для их расположения) -->
+                <article class="tour-card">
+                    <img src="img/tour1.png" alt="Путешествие в горы" class="tour-card__image">
+                    <h3 class="tour-card__title">Путешествие в горы</h3>
+                    <button class="tour-card__button">Подробнее</button>
+                </article>
+                <!-- Другие карточки аналогично -->
+            </div>
+        </section>
+
+        <!-- Другие секции сайта -->
+        <!-- Секция с формой и т.д. -->
+    </main>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="footer__info">
+            <p>&copy; 2024 YourTour. Все права защищены.</p>
+        </div>
+        <div class="footer__nav">
+            <a href="#">Политика конфиденциальности</a>
+            <a href="#">Контакты</a>
+        </div>
+    </footer>
+</body>
+</html>
